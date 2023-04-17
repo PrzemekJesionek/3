@@ -1,0 +1,75 @@
+//MOBILE MIXINS
+
+@mixin mobile-display-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+@mixin mobile-wrapper-box-size {
+  padding: 24px 16px;
+  margin: 8px 16px;
+  border-radius: 12px;
+}
+
+@mixin mobile-icon-size {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mobile-content-header {
+  margin-bottom: 8px;
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 700;
+}
+@mixin mobile-content-paragraph {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 19.6px;
+  font-weight: 400;
+}
+
+@mixin mobile-button-font {
+  width: 128px;
+  height: 48px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  border-radius: 24px;
+  text-decoration: none;
+}
+//TABLET MIXINS
+
+@mixin tablet-wrapper-box-size {
+  padding: 24px;
+  margin: 8px auto;
+}
+
+@mixin tablet-icon-size {
+  width: 72px;
+  height: 72px;
+}
+
+@mixin tablet-content-header {
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+@mixin tablet-content-paragraph {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+//DESKTOP MIXINS
+
+@mixin desktop-wrapper-box-size {
+  padding: 32px;
+  margin: 0;
+  margin-right: 16px;
+}

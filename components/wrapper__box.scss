@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .wrapper__box {
+    @include mobile-display-wrapper;
+    padding: 24px 16px;
+    margin: 8px 16px;
+    border-radius: 12px;
+    &--color-1 {
+      background-color: var(--box-bg-color-1);
+    }
+    &--color-2 {
+      background-color: var(--box-bg-color-2);
+    }
+    &--color-3 {
+      background-color: var(--box-bg-color-3);
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    width: 752px;
+    margin: 16px auto;
+    .wrapper__box {
+      @include tablet-wrapper-box-size;
+      .wrapper__content {
+      }
+    }
+  }
+}
+
+@media (min-width: 1180px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin: 150px auto;
+    width: 1136px;
+    padding: 0;
+    .wrapper__box {
+      @include desktop-wrapper-box-size;
+      width: 368px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//POPRAWIĆ ROZSTAW TEKSTU I STRZAŁEK W PRZYCISKACH NA KAŻDYM Widoku
