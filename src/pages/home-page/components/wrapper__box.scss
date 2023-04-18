@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin: 21px auto;
   .wrapper__box {
     @include mobile-display-wrapper;
     padding: 24px 16px;
@@ -21,7 +22,7 @@
 @media (min-width: 800px) {
   .wrapper {
     width: 752px;
-    margin: 16px auto;
+    margin: 120px auto;
     .wrapper__box {
       @include tablet-wrapper-box-size;
       .wrapper__content {
@@ -46,5 +47,3 @@
     }
   }
 }
-
-//POPRAWIĆ ROZSTAW TEKSTU I STRZAŁEK W PRZYCISKACH NA KAŻDYM Widoku

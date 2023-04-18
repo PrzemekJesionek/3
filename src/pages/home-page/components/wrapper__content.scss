@@ -8,13 +8,18 @@
     justify-content: center;
     margin-bottom: 16px;
     &-src-1 {
-      content: url("../../../../images/3d-box-1.png");
+      content: url("/images/3d-box.svg");
     }
     &-src-2 {
-      content: url("../../../../images/single-user-download-1.png");
+      content: url("/images/single-user-download.svg");
     }
     &-src-3 {
-      content: url("../../../../images/business-products-14-1.png");
+      content: url("/images/business-products.svg");
+    }
+    &-src-1,
+    &-src-2,
+    &-src-3 {
+      scale: 0.6;
     }
     &--color--1 {
       background-color: var(--box-icon-color-1);
@@ -57,7 +62,7 @@
       &-src-1,
       &-src-2,
       &-src-3 {
-        scale: 1.6;
+        scale: 1;
       }
     }
 
@@ -66,12 +71,13 @@
     }
     .wrapper__paragraph {
       @include tablet-content-paragraph;
+      margin-bottom: 14px;
     }
   }
   .wrapper__link {
     .link__text {
       margin-left: 24px;
-      margin-top: 0px;
+      // margin-top: -2px;
     }
     .fa-lg {
       margin-left: 6px;
@@ -96,6 +102,7 @@
   .wrapper__link {
     width: 132px;
     transition: 0.2s;
+    margin-top: -1px;
     color: var(--default-black);
     &:hover {
       color: var(--btn-hover-font);

@@ -27,6 +27,7 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin: 21px auto;
 }
 .wrapper .wrapper__box {
   display: flex;
@@ -50,7 +51,7 @@ body {
 @media (min-width: 800px) {
   .wrapper {
     width: 752px;
-    margin: 16px auto;
+    margin: 120px auto;
   }
   .wrapper .wrapper__box {
     padding: 24px;
@@ -92,13 +93,16 @@ body {
   margin-bottom: 16px;
 }
 .wrapper__content .icon-src-1 {
-  content: url("../../../../images/3d-box-1.png");
+  content: url("/images/3d-box.svg");
 }
 .wrapper__content .icon-src-2 {
-  content: url("../../../../images/single-user-download-1.png");
+  content: url("/images/single-user-download.svg");
 }
 .wrapper__content .icon-src-3 {
-  content: url("../../../../images/business-products-14-1.png");
+  content: url("/images/business-products.svg");
+}
+.wrapper__content .icon-src-1, .wrapper__content .icon-src-2, .wrapper__content .icon-src-3 {
+  scale: 0.6;
 }
 .wrapper__content .icon--color--1 {
   background-color: var(--box-icon-color-1);
@@ -150,19 +154,19 @@ body {
     height: 72px;
   }
   .wrapper__content .icon-src-1, .wrapper__content .icon-src-2, .wrapper__content .icon-src-3 {
-    scale: 1.6;
+    scale: 1;
   }
   .wrapper__content .wrapper__header {
     font-size: 32px;
     line-height: 38.4px;
   }
   .wrapper__content .wrapper__paragraph {
-    font-size: 16px;
     line-height: 22.4px;
+    font-size: 16px;
+    margin-bottom: 14px;
   }
   .wrapper__link .link__text {
     margin-left: 24px;
-    margin-top: 0px;
   }
   .wrapper__link .fa-lg {
     margin-left: 6px;
@@ -183,6 +187,7 @@ body {
   .wrapper__link {
     width: 132px;
     transition: 0.2s;
+    margin-top: -1px;
     color: var(--default-black);
   }
   .wrapper__link:hover {
