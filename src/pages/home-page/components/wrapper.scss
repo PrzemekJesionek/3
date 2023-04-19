@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 21px auto;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    width: 752px;
+    margin: 120px auto;
+  }
+}
+
+@media (min-width: 1180px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin: 150px auto;
+    width: 1136px;
+    padding: 0;
+  }
+}

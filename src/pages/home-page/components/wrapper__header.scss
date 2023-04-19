@@ -1,0 +1,14 @@
+.wrapper__header {
+  @include mobile-content-header;
+}
+
+@media (min-width: 800px) {
+  .wrapper__header {
+    @include tablet-content-header;
+  }
+}
+@media (min-width: 1180px) {
+  .wrapper__header {
+    margin-bottom: 16px;
+  }
+}

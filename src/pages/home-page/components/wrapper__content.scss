@@ -1,121 +1,14 @@
 .wrapper__content {
   display: flex;
   flex-direction: column;
-  .icon {
-    @include mobile-icon-size;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    &-src-1 {
-      content: url("/images/3d-box.svg");
-    }
-    &-src-2 {
-      content: url("/images/single-user-download.svg");
-    }
-    &-src-3 {
-      content: url("/images/business-products.svg");
-    }
-    &-src-1,
-    &-src-2,
-    &-src-3 {
-      scale: 0.6;
-    }
-    &--color--1 {
-      background-color: var(--box-icon-color-1);
-    }
-    &--color--2 {
-      background-color: var(--box-icon-color-2);
-    }
-    &--color--3 {
-      background-color: var(--box-icon-color-3);
-    }
-  }
-  .wrapper__header {
-    @include mobile-content-header;
-  }
-  .wrapper__paragraph {
-    @include mobile-content-paragraph;
-    color: var(--second-font-color);
-  }
-}
-.wrapper__link {
-  @include mobile-button-font;
-  background-color: var(--default-white);
-  display: flex;
-  align-items: center;
-
-  .link__text {
-    margin-left: 23px;
-    margin-top: 4px;
-  }
-  .fa-lg {
-    margin-left: 6px;
-    margin-top: 3px;
-  }
 }
 
 @media (min-width: 800px) {
   .wrapper__content {
-    .icon {
-      @include tablet-icon-size;
-      &-src-1,
-      &-src-2,
-      &-src-3 {
-        scale: 1;
-      }
-    }
-
-    .wrapper__header {
-      @include tablet-content-header;
-    }
-    .wrapper__paragraph {
-      @include tablet-content-paragraph;
-      margin-bottom: 14px;
-    }
-  }
-  .wrapper__link {
-    .link__text {
-      margin-left: 24px;
-      // margin-top: -2px;
-    }
-    .fa-lg {
-      margin-left: 6px;
-      margin-bottom: 4px;
-    }
   }
 }
 
 @media (min-width: 1180px) {
   .wrapper__content {
-    .icon {
-      margin-bottom: 24px;
-    }
-    .wrapper__header {
-      margin-bottom: 16px;
-    }
-    .wrapper__paragraph {
-      margin-bottom: 24px;
-      font-weight: 400;
-    }
-  }
-  .wrapper__link {
-    width: 132px;
-    transition: 0.2s;
-    margin-top: -1px;
-    color: var(--default-black);
-    &:hover {
-      color: var(--btn-hover-font);
-    }
-    &:focus {
-      background-color: var(--btn-pressed-bg);
-    }
-    .link__text {
-      margin-left: 24px;
-      margin-bottom: 4px;
-    }
-    .fa-lg {
-      margin-left: 9px;
-    }
   }
 }

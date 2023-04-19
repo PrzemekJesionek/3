@@ -1,0 +1,18 @@
+.wrapper__paragraph {
+  @include mobile-content-paragraph;
+  color: var(--second-font-color);
+}
+
+@media (min-width: 800px) {
+  .wrapper__paragraph {
+    @include tablet-content-paragraph;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .wrapper__paragraph {
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+}
