@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  &__text {
+  & &__text {
     margin-left: 24px;
     margin-top: 4px;
     letter-spacing: -0.3px;
@@ -17,7 +17,7 @@
 
 @media (min-width: 800px) {
   .wrapper-box-link {
-    &__text {
+    & &__text {
     }
     .fa-lg {
     }
@@ -36,7 +36,7 @@
     &:focus {
       background-color: var(--btn-pressed-bg);
     }
-    &__text {
+    & &__text {
       margin-left: 24px;
       margin-bottom: 4px;
       letter-spacing: -0.1px;

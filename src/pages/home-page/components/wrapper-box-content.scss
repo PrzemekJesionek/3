@@ -32,10 +32,10 @@
       scale: 0.6;
     }
   }
-  &__header {
+  & &__header {
     @include mobile-content-header;
   }
-  &__paragraph {
+  & &__paragraph {
     @include mobile-content-paragraph;
     color: var(--second-font-color);
   }
@@ -51,10 +51,10 @@
         scale: 1;
       }
     }
-    &__header {
+    & &__header {
       @include tablet-content-header;
     }
-    &__paragraph {
+    & &__paragraph {
       @include tablet-content-paragraph;
       margin-bottom: 14px;
     }
@@ -66,10 +66,10 @@
     &__icon {
       margin-bottom: 24px;
     }
-    &__header {
+    & &__header {
       margin-bottom: 16px;
     }
-    &__paragraph {
+    & &__paragraph {
       margin-bottom: 24px;
       font-weight: 400;
     }
