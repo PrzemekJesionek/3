@@ -1,10 +1,10 @@
-.wrapper__link {
+.wrapper-box-link {
   @include mobile-button-font;
   background-color: var(--default-white);
   display: flex;
   align-items: center;
 
-  .link__text {
+  &__text {
     margin-left: 24px;
     margin-top: 4px;
     letter-spacing: -0.3px;
@@ -16,19 +16,16 @@
 }
 
 @media (min-width: 800px) {
-  .wrapper__link {
-    .link__text {
-      margin-left: 24px;
+  .wrapper-box-link {
+    &__text {
     }
     .fa-lg {
-      margin-left: 8px;
-      margin-bottom: 3px;
     }
   }
 }
 
 @media (min-width: 1180px) {
-  .wrapper__link {
+  .wrapper-box-link {
     width: 132px;
     transition: 0.2s;
     margin-top: -3px;
@@ -39,7 +36,7 @@
     &:focus {
       background-color: var(--btn-pressed-bg);
     }
-    .link__text {
+    &__text {
       margin-left: 24px;
       margin-bottom: 4px;
       letter-spacing: -0.1px;

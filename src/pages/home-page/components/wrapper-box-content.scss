@@ -1,0 +1,77 @@
+.wrapper-box-content {
+  display: flex;
+  flex-direction: column;
+  &__icon {
+    @include mobile-icon-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    &--color-1 {
+      background-color: var(--box-icon-color-1);
+    }
+    &--src-1 {
+      content: url("/images/3d-box.svg");
+    }
+    &--color-2 {
+      background-color: var(--box-icon-color-2);
+    }
+    &--src-2 {
+      content: url("/images/single-user-download.svg");
+    }
+    &--color-3 {
+      background-color: var(--box-icon-color-3);
+    }
+    &--src-3 {
+      content: url("/images/business-products.svg");
+    }
+
+    &--src-1,
+    &--src-2,
+    &--src-3 {
+      scale: 0.6;
+    }
+  }
+  &__header {
+    @include mobile-content-header;
+  }
+  &__paragraph {
+    @include mobile-content-paragraph;
+    color: var(--second-font-color);
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapper-box-content {
+    &__icon {
+      @include tablet-icon-size;
+      &--src-1,
+      &--src-2,
+      &--src-3 {
+        scale: 1;
+      }
+    }
+    &__header {
+      @include tablet-content-header;
+    }
+    &__paragraph {
+      @include tablet-content-paragraph;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+@media (min-width: 1180px) {
+  .wrapper-box-content {
+    &__icon {
+      margin-bottom: 24px;
+    }
+    &__header {
+      margin-bottom: 16px;
+    }
+    &__paragraph {
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+  }
+}

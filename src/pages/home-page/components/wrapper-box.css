@@ -1,0 +1,23 @@
+.wrapper-box {
+  padding: 24px 16px;
+  margin: 8px 16px;
+  border-radius: 12px;
+}
+.wrapper-box--color-1 {
+  background-color: var(--box-bg-color-1);
+}
+.wrapper-box--color-2 {
+  background-color: var(--box-bg-color-2);
+}
+.wrapper-box--color-3 {
+  background-color: var(--box-bg-color-3);
+}
+
+@media (min-width: 1180px) {
+  .wrapper-box {
+    width: 368px;
+  }
+  .wrapper-box:last-child {
+    margin-right: 0;
+  }
+}/*# sourceMappingURL=wrapper-box.css.map */
